@@ -30,7 +30,8 @@ body {
     background-image: url(../images/bg.png);
     background-color: #d7e0df;
     background-size: 80%;
-    min-width: 650px;
+    background-repeat: repeat;
+    min-width: 720px;
 }
 
 hr {
@@ -40,7 +41,7 @@ hr {
     margin-left: 3%;
     margin-right: 3%;
     border-style: inset;
-    border: .3vw solid #2ebbad;
+    border: 3px solid #2ebbad;
 }
 
 .main-header__portal-info__logo__title {
@@ -95,6 +96,7 @@ hr {
     background-position-y: 19px;
     background-size: 94%;
     background-repeat: no-repeat;
+
 }
 
 #vacinacao {
@@ -252,7 +254,7 @@ hr {
 .tem-que-vacinar span, .assista-aos-filmes span, .press-kit span {
     font-family: Gotham-Bold;
     text-transform: uppercase;
-    font-size: 2.3vw;
+    font-size: 18px;
 }
 
 .tem-que-vacinar span .white {
@@ -261,7 +263,7 @@ hr {
 
 .yellow span {
     color: yellow;
-    font-size: 4vw;
+    font-size: 30px;
 }
 
 .tem-que-vacinar .yellow, .assista-aos-filmes .yellow {
@@ -283,7 +285,7 @@ hr {
 
 .background-coracao {
     background-image: url(../images/coracao.png);
-    background-size: 40%;
+    background-size: 230px;
     background-repeat: no-repeat;
     margin-right: 3%;
     background-position-y: center;
@@ -373,6 +375,23 @@ hr {
     font-size: 7vw;
     margin-top: -10px;
     margin-bottom: -10px;
+}
+
+.fundo {
+    bottom: 15px;
+    color: #fff;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 40px;
+    margin-right: 40px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    height: 130px;
+    text-align: left;
+    font-family: Gotham-Bold;
 }
 
 .modal {
