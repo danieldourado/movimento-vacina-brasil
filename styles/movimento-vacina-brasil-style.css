@@ -30,7 +30,19 @@ body {
     background-image: url(../images/bg.png);
     background-color: #d7e0df;
     background-size: 80%;
+    min-width: 600px;
 }
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-style: inset;
+    border: 3px solid #2ebbad;
+ 
+  } 
 
 .main-header__portal-info__logo__title {
     font-family: Arial, sans-serif;
@@ -163,12 +175,12 @@ body {
     }
 }
 
-#depoimentos-full {
+#calendario-full {
     height: 330px;
     position: relative
 }
 
-#depoimentos-full .box-depoimentos {
+#calendario-full .box-calendario {
     bottom: 15px;
     color: #fff;
     text-align: center;
@@ -182,18 +194,18 @@ body {
     max-width: 1140px
 }
 
-#depoimentos-full .box-depoimentos p,
-#depoimentos-full .box-depoimentos span {
+#calendario-full .box-calendario p,
+#calendario-full .box-calendario span {
     font-size: 12px;
     font-family: Gotham-Bold;
     text-transform: uppercase
 }
 
-#depoimentos-full .box-depoimentos span {
+#calendario-full .box-calendario span {
     display: block
 }
 
-#depoimentos-full .box-depoimentos img {
+#calendario-full .box-calendario img {
     margin-bottom: 10px;
     margin-top: 5px;
     width: 50%;
@@ -202,6 +214,54 @@ body {
 #passo-a-passo {
     background-color: #ffd300;
     padding: 50px
+}
+
+.vl {
+    border-left: 1px solid #faeb37;
+  }
+
+.tem-que-vacinar {
+    bottom: 15px;
+    color: #fff;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 40px;
+    margin-right: 40px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+}
+.tem-que-vacinar span {
+    font-family: Gotham-Bold;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+.tem-que-vacinar span .white{
+    color: white;
+}
+.tem-que-vacinar .yellow span{
+    color: yellow;
+    font-size: 30px;
+}
+.tem-que-vacinar .yellow{
+    margin-left: 50px !important;
+}
+.tem-que-vacinar div {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.tem-que-vacinar .my-auto {
+    text-align: left;
+}
+
+
+.tem-que-vacinar .parte-1{
+    
+}
+.tem-que-vacinar img{
+    width: 80%;
 }
 
 .modal {
