@@ -30,19 +30,18 @@ body {
     background-image: url(../images/bg.png);
     background-color: #d7e0df;
     background-size: 80%;
-    min-width: 600px;
+    min-width: 650px;
 }
 
-hr { 
+hr {
     display: block;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     margin-left: 3%;
     margin-right: 3%;
     border-style: inset;
-    border: 3px solid #2ebbad;
- 
-  } 
+    border: .3vw solid #2ebbad;
+}
 
 .main-header__portal-info__logo__title {
     font-family: Arial, sans-serif;
@@ -137,8 +136,7 @@ hr {
     text-decoration: none
 }
 
-#vacinacao-contra-gripe a:hover .box-item-download,
-#vacinacao-contra-gripe a:hover .line-box {
+#vacinacao-contra-gripe a:hover .box-item-download, #vacinacao-contra-gripe a:hover .line-box {
     background-color: #dcb603
 }
 
@@ -191,11 +189,9 @@ hr {
     margin-right: 40px;
     left: 0;
     right: 0;
-    max-width: 1140px
 }
 
-#calendario-full .box-calendario p,
-#calendario-full .box-calendario span {
+#calendario-full .box-calendario p, #calendario-full .box-calendario span {
     font-size: 12px;
     font-family: Gotham-Bold;
     text-transform: uppercase
@@ -211,14 +207,33 @@ hr {
     width: 50%;
 }
 
-#passo-a-passo {
-    background-color: #ffd300;
-    padding: 50px
+#saiba-mais {
+    background-color: #faeb37;
+    height: 170px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: left;
+    
+}
+#saiba-mais img {
+    padding-top: 10px;
+    height: 90%;
+    
+}
+#saiba-mais span {
+    font-family: Gotham-Bold;
+    text-transform: uppercase;
+}
+#saiba-mais .green {
+    color: #337964;
+    font-size: 20px;
 }
 
 .vl {
     border-left: 1px solid #faeb37;
-  }
+}
 
 .tem-que-vacinar {
     bottom: 15px;
@@ -233,35 +248,131 @@ hr {
     right: 0;
     padding: 20px;
 }
-.tem-que-vacinar span {
+
+.tem-que-vacinar span, .assista-aos-filmes span, .press-kit span {
     font-family: Gotham-Bold;
     text-transform: uppercase;
-    font-size: 17px;
+    font-size: 2.3vw;
 }
-.tem-que-vacinar span .white{
+
+.tem-que-vacinar span .white {
     color: white;
 }
-.tem-que-vacinar .yellow span{
+
+.yellow span {
     color: yellow;
-    font-size: 30px;
+    font-size: 4vw;
 }
-.tem-que-vacinar .yellow{
-    margin-left: 50px !important;
+
+.tem-que-vacinar .yellow, .assista-aos-filmes .yellow {
+    margin-left: 5% !important;
 }
+
 .tem-que-vacinar div {
     padding-left: 0px !important;
     padding-right: 0px !important;
 }
+
 .tem-que-vacinar .my-auto {
     text-align: left;
 }
 
-
-.tem-que-vacinar .parte-1{
-    
-}
-.tem-que-vacinar img{
+.tem-que-vacinar img {
     width: 80%;
+}
+
+.background-coracao {
+    background-image: url(../images/coracao.png);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin-right: 3%;
+    background-position-y: center;
+    background-position-x: right;
+}
+
+.assista-aos-filmes {
+    padding: 20px;
+}
+
+.botoes-filmes {
+    height: 150px;
+}
+
+.botoes-filmes #botoes {
+    font-family: Gotham-Bold;
+    font-size: 30px;
+    color: #337964;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    background-image: url(../images/barra.png);
+    background-size: 94%;
+    background-repeat: no-repeat;
+    margin-left: 3%;
+    background-position-y: center;
+    height: 50%;
+}
+
+#rcorners1 {
+    border-radius: 25px;
+    background: #337964;
+    padding: 10px 25px;
+    font-size: 10px;
+    width: 200px;
+    color: #faeb37;
+  }
+
+  #rcorners2 {
+    border-radius: 25px;
+    background: #faeb37;
+    padding: 10px 25px;
+    font-size: 10px;
+    width: 200px;
+    color: #337964;
+}
+#rcorners3 {
+    border-radius: 25px;
+    background: white;
+    padding: 4px 20px;
+    font-size: 7px;
+    width: 200px;
+    color:black;
+    font-family: Gotham-Medium;
+}
+
+    
+.img-filmes {
+    width: 90%;
+}
+
+.yellow {
+    color: #faeb37;
+}
+
+.press-kit {
+    bottom: 15px;
+    color: #fff;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 40px;
+    margin-right: 40px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+}
+
+.redes-sociais {
+    font-family: Gotham-Bold;
+    color: white;
+    font-size: 2.6vw;
+}
+
+.hashtag{
+    font-size: 7vw;
+    margin-top: -10px;
+    margin-bottom: -10px;
 }
 
 .modal {
@@ -299,27 +410,19 @@ hr {
     opacity: .8
 }
 
-#modalVideoChikungunya,
-#modalVideoDengue,
-#modalVideoZika {
+#modalVideoChikungunya, #modalVideoDengue, #modalVideoZika {
     padding-top: 5%
 }
 
-#modalVideoChikungunya .modal-dialog,
-#modalVideoDengue .modal-dialog,
-#modalVideoZika .modal-dialog {
+#modalVideoChikungunya .modal-dialog, #modalVideoDengue .modal-dialog, #modalVideoZika .modal-dialog {
     max-width: 730px
 }
 
-#modalVideoChikungunya .modal-dialog .modal-body,
-#modalVideoDengue .modal-dialog .modal-body,
-#modalVideoZika .modal-dialog .modal-body {
+#modalVideoChikungunya .modal-dialog .modal-body, #modalVideoDengue .modal-dialog .modal-body, #modalVideoZika .modal-dialog .modal-body {
     padding: 8px
 }
 
-#modalVideoChikungunya .modal-dialog iframe,
-#modalVideoDengue .modal-dialog iframe,
-#modalVideoZika .modal-dialog iframe {
+#modalVideoChikungunya .modal-dialog iframe, #modalVideoDengue .modal-dialog iframe, #modalVideoZika .modal-dialog iframe {
     width: 100%;
     height: 300px
 }
