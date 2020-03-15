@@ -1,0 +1,265 @@
+@font-face {
+    font-family: Gotham-Medium;
+    src: url(../fonts/Gotham-Medium.otf);
+}
+
+@font-face {
+    font-family: Gotham-Ultra;
+    src: url(../fonts/Gotham-Ultra.otf);
+}
+
+@font-face {
+    font-family: Gotham-Bold;
+    src: url(../fonts/Gotham-Bold.otf);
+}
+
+@font-face {
+    font-family: TTNormsRegular;
+    src: url(../fonts/TTNormsRegular.eot);
+    src: url(../fonts/TTNormsRegular.eot) format("embedded-opentype"), url(../fonts/TTNormsRegular.woff2) format("woff2"), url(../fonts/TTNormsRegular.woff) format("woff"), url(../fonts/TTNormsRegular.ttf) format("truetype"), url(../fonts/TTNormsRegular.svg#TTNormsRegular) format("svg")
+}
+
+@font-face {
+    font-family: TTNormsBold;
+    src: url(../fonts/TTNormsBold.eot);
+    src: url(../fonts/TTNormsBold.eot) format("embedded-opentype"), url(../fonts/TTNormsBold.woff2) format("woff2"), url(../fonts/TTNormsBold.woff) format("woff"), url(../fonts/TTNormsBold.ttf) format("truetype"), url(../fonts/TTNormsBold.svg#TTNormsBold) format("svg")
+}
+
+body {
+    font-family: MyriadProRegular;
+    background-image: url(../images/bg.png);
+    background-color: #d7e0df;
+    background-size: 80%;
+}
+
+.main-header__portal-info__logo__title {
+    font-family: Arial, sans-serif;
+    font-weight: 700
+}
+
+.main-header__portal-info__logo:hover {
+    text-decoration: none
+}
+
+.searchField {
+    font-family: Arial, sans-serif;
+    font-size: 11px
+}
+
+.breadcrumb {
+    display: block;
+    padding: 0
+}
+
+#header {
+    padding-top: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#header img {
+    margin: 20px auto;
+    width: 100%
+}
+
+#header p {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    max-width: 800px;
+    margin: 30px auto
+}
+
+#header p i {
+    margin-right: 8px
+}
+
+#header p b {
+    font-family: TTNormsBold
+}
+
+#conteudo {
+    background-image: url(../images/background-header.png);
+    background-position-x: center;
+    background-position-y: 19px;
+    background-size: 94%;
+    background-repeat: no-repeat;
+}
+
+#vacinacao {
+    font-family: Gotham-Medium;
+    font-size: 90px;
+    color: #327460;
+}
+
+#contra-gripe {
+    font-family: Gotham-Ultra;
+    font-size: 65px;
+    color: #2ebbad;
+}
+
+#dia-d {
+    font-family: Gotham-Ultra;
+    font-size: 150px;
+    color: #2ebbad;
+    margin-top: -2.3rem !important;
+}
+
+#dia-d-contra-gripe {
+    font-family: Gotham-Medium;
+    font-size: 48px;
+    color: #327460;
+}
+
+#vacinacao-contra-gripe {
+    background: #ffffff;
+    padding: 30px
+}
+
+#vacinacao-contra-gripe h1 {
+    margin-top: -1rem;
+    margin-bottom: -1.2rem;
+}
+
+#vacinacao-contra-gripe a:hover {
+    text-decoration: none
+}
+
+#vacinacao-contra-gripe a:hover .box-item-download,
+#vacinacao-contra-gripe a:hover .line-box {
+    background-color: #dcb603
+}
+
+#vacinacao-contra-gripe .box-item-download {
+    background-color: #ffd300;
+    color: #515036;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 22px;
+    padding: 30px;
+    border-radius: 3px
+}
+
+#vacinacao-contra-gripe .line-box {
+    background-color: #ffd300;
+    height: 8px;
+    border-radius: 2px;
+    display: block;
+    margin-top: 5px
+}
+
+@media (max-width:768px) {
+    #vacinacao-contra-gripe {
+        padding: 30px 0px
+    }
+    #vacinacao-contra-gripe .box-item-download {
+        font-size: 18px
+    }
+    .link-download {
+        margin-bottom: 10px;
+        display: block;
+        cursor: pointer
+    }
+}
+
+#depoimentos-full {
+    height: 330px;
+    position: relative
+}
+
+#depoimentos-full .box-depoimentos {
+    bottom: 15px;
+    color: #fff;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 40px;
+    margin-right: 40px;
+    left: 0;
+    right: 0;
+    max-width: 1140px
+}
+
+#depoimentos-full .box-depoimentos p,
+#depoimentos-full .box-depoimentos span {
+    font-size: 12px;
+    font-family: Gotham-Bold;
+    text-transform: uppercase
+}
+
+#depoimentos-full .box-depoimentos span {
+    display: block
+}
+
+#depoimentos-full .box-depoimentos img {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    width: 50%;
+}
+
+#passo-a-passo {
+    background-color: #ffd300;
+    padding: 50px
+}
+
+.modal {
+    padding-top: 5%
+}
+
+.modal .modal-header {
+    border: none
+}
+
+.modal .modal-header h5 {
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    color: #4f7345;
+    font-family: TTNormsExtraBold
+}
+
+.modal .modal-content {
+    border-radius: 0;
+    background-color: #ffd300;
+    text-align: center
+}
+
+.modal .modal-content h6 {
+    color: #4f7345;
+    font-family: TTNormsExtraBold
+}
+
+.modal .modal-content ul li a {
+    color: #515036
+}
+
+.modal-backdrop.show {
+    opacity: .8
+}
+
+#modalVideoChikungunya,
+#modalVideoDengue,
+#modalVideoZika {
+    padding-top: 5%
+}
+
+#modalVideoChikungunya .modal-dialog,
+#modalVideoDengue .modal-dialog,
+#modalVideoZika .modal-dialog {
+    max-width: 730px
+}
+
+#modalVideoChikungunya .modal-dialog .modal-body,
+#modalVideoDengue .modal-dialog .modal-body,
+#modalVideoZika .modal-dialog .modal-body {
+    padding: 8px
+}
+
+#modalVideoChikungunya .modal-dialog iframe,
+#modalVideoDengue .modal-dialog iframe,
+#modalVideoZika .modal-dialog iframe {
+    width: 100%;
+    height: 300px
+}
