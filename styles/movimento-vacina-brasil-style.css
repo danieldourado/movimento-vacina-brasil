@@ -13,6 +13,10 @@
     src: url(../fonts/Gotham-Bold.otf), url(../fonts/Gotham-Bold.ttf) format("truetype");
 }
 
+#botao-dia-d {
+    display: none;
+}
+
 .main-header__portal-info__logo__title {
     font-family: Arial, sans-serif;
     font-weight: 700
@@ -138,6 +142,7 @@ hr {
     font-size: 5.8vw;
     font-family: Gotham-Ultra;
     color: #2ebbad;
+    margin-top: -5%;
 }
 @media screen and (min-width: 768px) {
     #contra-gripe {
@@ -543,7 +548,7 @@ hr {
     width: 100%;
     text-transform: uppercase;
     color: #4f7345;
-    font-family: TTNormsExtraBold
+    font-family: Gotham-Bold
 }
 .modal .modal-content {
     border-radius: 0;
@@ -552,7 +557,7 @@ hr {
 }
 .modal .modal-content h6 {
     color: #4f7345;
-    font-family: TTNormsExtraBold
+    font-family: Gotham-Bold
 }
 .modal .modal-content ul li a {
     color: #515036
@@ -560,22 +565,22 @@ hr {
 .modal-backdrop.show {
     opacity: .8
 }
-#modalVideoChikungunya,
+#modalVideoFilmeGeral,
 #modalVideoDengue,
 #modalVideoZika {
     padding-top: 5%
 }
-#modalVideoChikungunya .modal-dialog,
+#modalVideoFilmeGeral .modal-dialog,
 #modalVideoDengue .modal-dialog,
 #modalVideoZika .modal-dialog {
     max-width: 730px
 }
-#modalVideoChikungunya .modal-dialog .modal-body,
+#modalVideoFilmeGeral .modal-dialog .modal-body,
 #modalVideoDengue .modal-dialog .modal-body,
 #modalVideoZika .modal-dialog .modal-body {
     padding: 8px
 }
-#modalVideoChikungunya .modal-dialog iframe,
+#modalVideoFilmeGeral .modal-dialog iframe,
 #modalVideoDengue .modal-dialog iframe,
 #modalVideoZika .modal-dialog iframe {
     width: 100%;
