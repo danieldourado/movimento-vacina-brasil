@@ -31,7 +31,7 @@ body {
     background-color: #d7e0df;
     background-size: 80%;
     background-repeat: repeat;
-    min-width: 720px;
+    min-width: 550px;
 }
 
 hr {
@@ -96,7 +96,6 @@ hr {
     background-position-y: 19px;
     background-size: 94%;
     background-repeat: no-repeat;
-
 }
 
 #vacinacao {
@@ -138,7 +137,8 @@ hr {
     text-decoration: none
 }
 
-#vacinacao-contra-gripe a:hover .box-item-download, #vacinacao-contra-gripe a:hover .line-box {
+#vacinacao-contra-gripe a:hover .box-item-download,
+#vacinacao-contra-gripe a:hover .line-box {
     background-color: #dcb603
 }
 
@@ -193,7 +193,8 @@ hr {
     right: 0;
 }
 
-#calendario-full .box-calendario p, #calendario-full .box-calendario span {
+#calendario-full .box-calendario p,
+#calendario-full .box-calendario span {
     font-size: 12px;
     font-family: Gotham-Bold;
     text-transform: uppercase
@@ -217,17 +218,18 @@ hr {
     padding-left: 50px;
     padding-right: 50px;
     text-align: left;
-    
 }
+
 #saiba-mais img {
     padding-top: 10px;
     height: 90%;
-    
 }
+
 #saiba-mais span {
     font-family: Gotham-Bold;
     text-transform: uppercase;
 }
+
 #saiba-mais .green {
     color: #337964;
     font-size: 20px;
@@ -251,7 +253,9 @@ hr {
     padding: 20px;
 }
 
-.tem-que-vacinar span, .assista-aos-filmes span, .press-kit span {
+.tem-que-vacinar span,
+.assista-aos-filmes span,
+.press-kit span {
     font-family: Gotham-Bold;
     text-transform: uppercase;
     font-size: 18px;
@@ -266,7 +270,8 @@ hr {
     font-size: 30px;
 }
 
-.tem-que-vacinar .yellow, .assista-aos-filmes .yellow {
+.tem-que-vacinar .yellow,
+.assista-aos-filmes .yellow {
     margin-left: 5% !important;
 }
 
@@ -322,9 +327,9 @@ hr {
     font-size: 10px;
     width: 200px;
     color: #faeb37;
-  }
+}
 
-  #rcorners2 {
+#rcorners2 {
     border-radius: 25px;
     background: #faeb37;
     padding: 10px 25px;
@@ -332,17 +337,17 @@ hr {
     width: 200px;
     color: #337964;
 }
+
 #rcorners3 {
     border-radius: 25px;
     background: white;
     padding: 4px 20px;
     font-size: 7px;
     width: 200px;
-    color:black;
+    color: black;
     font-family: Gotham-Medium;
 }
 
-    
 .img-filmes {
     width: 90%;
 }
@@ -371,7 +376,7 @@ hr {
     font-size: 2.6vw;
 }
 
-.hashtag{
+.hashtag {
     font-size: 7vw;
     margin-top: -10px;
     margin-bottom: -10px;
@@ -392,6 +397,12 @@ hr {
     height: 130px;
     text-align: left;
     font-family: Gotham-Bold;
+}
+
+@media (min-width:768px) {
+    #calendario-full .box-calendario img {
+        width: 40%;
+    }
 }
 
 .modal {
@@ -429,19 +440,27 @@ hr {
     opacity: .8
 }
 
-#modalVideoChikungunya, #modalVideoDengue, #modalVideoZika {
+#modalVideoChikungunya,
+#modalVideoDengue,
+#modalVideoZika {
     padding-top: 5%
 }
 
-#modalVideoChikungunya .modal-dialog, #modalVideoDengue .modal-dialog, #modalVideoZika .modal-dialog {
+#modalVideoChikungunya .modal-dialog,
+#modalVideoDengue .modal-dialog,
+#modalVideoZika .modal-dialog {
     max-width: 730px
 }
 
-#modalVideoChikungunya .modal-dialog .modal-body, #modalVideoDengue .modal-dialog .modal-body, #modalVideoZika .modal-dialog .modal-body {
+#modalVideoChikungunya .modal-dialog .modal-body,
+#modalVideoDengue .modal-dialog .modal-body,
+#modalVideoZika .modal-dialog .modal-body {
     padding: 8px
 }
 
-#modalVideoChikungunya .modal-dialog iframe, #modalVideoDengue .modal-dialog iframe, #modalVideoZika .modal-dialog iframe {
+#modalVideoChikungunya .modal-dialog iframe,
+#modalVideoDengue .modal-dialog iframe,
+#modalVideoZika .modal-dialog iframe {
     width: 100%;
     height: 300px
 }
