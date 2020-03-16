@@ -48,10 +48,13 @@ hr {
 
 .bg-jpg {
     background-image: url(../images/bg-verde.jpg);
-    background-color: #d7e0df;
     background-size: 96%;
     background-position: center;
-    background-repeat-x: no-repeat;
+    background-repeat: repeat-y;
+}
+
+.white-stripe {
+    background-color: white;
 }
 
 .main-header__portal-info__logo__title {
@@ -76,16 +79,18 @@ hr {
 #header {
     background-image: url(../images/bg-topo.png);
     background-size: 96%;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-position: bottom;
     height: 46vw;
+    max-height: 380px;
+    background-repeat: no-repeat;
 }
 
+
+}
 #header img {
     margin: 20px auto;
     width: 100%
 }
-
 #header p {
     color: #fff;
     font-size: 22px;
@@ -93,75 +98,85 @@ hr {
     max-width: 800px;
     margin: 30px auto
 }
-
 #header p i {
     margin-right: 8px
 }
-
 #header p b {
     font-family: TTNormsBold
 }
-
 #conteudo0 {
     background-image: url(../images/background.jpg);
     background-color: #d7e0df;
     background-size: 4%;
     background-repeat: repeat;
 }
-
 #conteudo {
-    max-width: 767px;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
+#vacinacao-contra-gripe {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 500px;
+    text-align: center;
+}
+#vacinacao-contra-gripe span {
+    display: inline-block;
+}
 #vacinacao {
     font-family: Gotham-Medium;
-    font-size: 90px;
     color: #327460;
+    font-size: 8vw;
 }
-
+@media screen and (min-width: 768px) {
+    #vacinacao {
+        font-size: 62px;
+    }
+}
 #contra-gripe {
+    font-size: 5.8vw;
     font-family: Gotham-Ultra;
-    font-size: 65px;
     color: #2ebbad;
 }
-
-#div-dia-d {
-    height: 26vw;
+@media screen and (min-width: 768px) {
+    #contra-gripe {
+        font-size: 45px;
+    }
 }
-
+#div-dia-d {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
 #dia-d {
     font-family: Gotham-Ultra;
-    font-size: 150px;
     color: #2ebbad;
-    margin-top: -2.3rem !important;
+    font-size: 12vw;
 }
-
+@media screen and (min-width: 768px) {
+    #dia-d {
+        font-size: 92px;
+    }
+}
 #dia-d-contra-gripe {
     font-family: Gotham-Medium;
-    font-size: 48px;
+    font-size: 3.8vw;
     color: #327460;
+    margin-top: -5%;
 }
-
-#vacinacao-contra-gripe,
-#div-dia-d {
-    background: #ffffff;
-    padding: 30px
+@media screen and (min-width: 768px) {
+    #dia-d-contra-gripe {
+        font-size: 30px;
+    }
 }
-
-#vacinacao-contra-gripe h1 {
-    margin-top: -1rem;
-    margin-bottom: -1.2rem;
-}
-
 #vacinacao-contra-gripe a:hover {
     text-decoration: none
 }
-
 #vacinacao-contra-gripe a:hover .box-item-download,
 #vacinacao-contra-gripe a:hover .line-box {
     background-color: #dcb603
 }
-
 #vacinacao-contra-gripe .box-item-download {
     background-color: #ffd300;
     color: #515036;
@@ -172,7 +187,6 @@ hr {
     padding: 30px;
     border-radius: 3px
 }
-
 #vacinacao-contra-gripe .line-box {
     background-color: #ffd300;
     height: 8px;
@@ -180,12 +194,6 @@ hr {
     display: block;
     margin-top: 5px
 }
-
-#calendario-full {
-    height: 330px;
-    position: relative;
-}
-
 #calendario-full .box-calendario {
     bottom: 15px;
     color: #fff;
@@ -198,24 +206,20 @@ hr {
     left: 0;
     right: 0;
 }
-
 #calendario-full .box-calendario p,
 #calendario-full .box-calendario span {
     font-size: 12px;
     font-family: Gotham-Bold;
     text-transform: uppercase
 }
-
 #calendario-full .box-calendario span {
     display: block
 }
-
 #calendario-full .box-calendario img {
     margin-bottom: 10px;
     margin-top: 5px;
     width: 50%;
 }
-
 #saiba-mais {
     background-color: #faeb37;
     height: 170px;
@@ -225,26 +229,21 @@ hr {
     padding-right: 50px;
     text-align: left;
 }
-
 #saiba-mais img {
     padding-top: 10px;
     height: 90%;
 }
-
 #saiba-mais span {
     font-family: Gotham-Bold;
     text-transform: uppercase;
 }
-
 #saiba-mais .green {
     color: #337964;
     font-size: 20px;
 }
-
 .vl {
     border-left: 1px solid #faeb37;
 }
-
 .tem-que-vacinar {
     bottom: 15px;
     color: #fff;
@@ -258,7 +257,6 @@ hr {
     right: 0;
     padding: 20px;
 }
-
 .tem-que-vacinar span,
 .assista-aos-filmes span,
 .press-kit span {
@@ -266,47 +264,38 @@ hr {
     text-transform: uppercase;
     font-size: 3vw;
 }
-
 .tem-que-vacinar span .white {
     color: white;
 }
-
 .yellow span {
     color: yellow;
     font-size: 30px;
 }
-
 .tem-que-vacinar .yellow,
 .assista-aos-filmes .yellow {
     margin-left: 5% !important;
 }
-
 .tem-que-vacinar div {
     padding-left: 0px !important;
     padding-right: 0px !important;
 }
-
 .tem-que-vacinar .my-auto {
     text-align: left;
 }
-
 .tem-que-vacinar img {
     width: 80%;
 }
-
 .background-coracao {
     background-image: url(../images/coracao.png);
     background-repeat: no-repeat;
     margin-right: 3%;
     background-position-y: center;
     background-position-x: right;
-    background-size: 20vw;
+    background-size: 20%;
 }
-
 .assista-aos-filmes {
     padding: 20px;
 }
-
 .botoes-filmes #botoes {
     font-family: Gotham-Bold;
     font-size: 30px;
@@ -321,7 +310,6 @@ hr {
     background-position-y: center;
     height: 3em;
 }
-
 #rcorners1 {
     border-radius: 25px;
     background: #337964;
@@ -330,7 +318,6 @@ hr {
     width: 200px;
     color: #faeb37;
 }
-
 #rcorners2 {
     border-radius: 25px;
     background: #faeb37;
@@ -339,7 +326,6 @@ hr {
     width: 200px;
     color: #337964;
 }
-
 #rcorners3 {
     border-radius: 25px;
     background: white;
@@ -349,15 +335,12 @@ hr {
     color: black;
     font-family: Gotham-Medium;
 }
-
 .img-filmes {
     width: 90%;
 }
-
 .yellow {
     color: #faeb37;
 }
-
 .press-kit {
     bottom: 15px;
     color: #fff;
@@ -371,20 +354,27 @@ hr {
     right: 0;
     padding: 20px;
 }
-
 .redes-sociais {
     font-family: Gotham-Bold;
     color: white;
     font-size: 2.6vw;
-    padding: 3vw;
+    padding: 3%;
 }
-
+@media screen and (min-width: 768px) {
+    .redes-sociais {
+        font-size: 20px;
+    }
+}
 .hashtag {
     font-size: 7vw;
     margin-top: -10px;
     margin-bottom: -10px;
 }
-
+@media screen and (min-width: 768px) {
+    .hashtag {
+        font-size: 54px;
+    }
+}
 .fundo {
     bottom: 15px;
     color: #fff;
@@ -401,95 +391,82 @@ hr {
     text-align: left;
     font-family: Gotham-Bold;
 }
-
-#vacinacao {
-    font-size: 8vw;
-}
-
-#contra-gripe {
-    font-size: 5.8vw;
-}
-
-#vacinacao-contra-gripe h1 {
-    margin-top: -1rem;
-    margin-bottom: 0.5rem;
-}
-
-#vacinacao-contra-gripe {
-    height: 19vw;
-}
-
 .box-calendario .col {
     padding-right: 5px;
     padding-left: 5px;
 }
-
 #calendario-full .box-calendario {
     margin-left: 10px;
     margin-right: 10px;
 }
-
 #calendario-full .box-calendario span {
     font-size: 8px;
 }
-
+@media screen and (min-width: 768px) {
+    #vacincalendario-full .box-calendario spanacao {
+        font-size: 62px;
+    }
+}
 #calendario-full {
-    height: 220px;
+    height: 240px;
     position: relative;
 }
-
-#dia-d {
-    font-size: 19vw;
-}
-
-#dia-d-contra-gripe {
-    font-size: 6vw;
-    margin-top: -5.9vw !important;
-}
-
 #div-tem-que-vacinar {
-    height: 76vw;
+    height: 72vw;
+    max-height: 552px;
 }
-
 .tem-que-vacinar {
     margin-left: 10px;
     margin-right: 10px;
     padding: 10px;
 }
-
 .tem-que-vacinar span {
     font-size: 3vw;
 }
-
+@media screen and (min-width: 768px) {
+    .tem-que-vacinar span {
+        font-size: 23px;
+    }
+}
 .tem-que-vacinar {
     line-height: 0.9;
 }
-
 .assista-aos-filmes {
     padding: 10px;
 }
-
 .yellow span {
     color: yellow;
     font-size: 5vw;
 }
-
+@media screen and (min-width: 768px) {
+    .yellow span {
+        font-size: 38px;
+    }
+}
 .botoes-filmes #botoes {
     font-size: 4vw;
 }
-
+@media screen and (min-width: 768px) {
+    .botoes-filmes #botoes {
+        font-size: 31px;
+    }
+}
 #saiba-mais {
     padding-left: 0px;
     padding-right: 0px;
     line-height: 1;
     height: 29vw;
+    max-height: 222px;
 }
-
 #saiba-mais .green {
     color: #337964;
     font-size: 3vw;
 }
-
+@media screen and (min-width: 768px) {
+    #saiba-mais .green {
+        font-size: 23px;
+    }
+}
 #rcorners1 {
     border-radius: 25px;
     background: #337964;
@@ -498,72 +475,69 @@ hr {
     width: 200px;
     color: #faeb37;
 }
-
+@media screen and (min-width: 768px) {
+    #rcorners1,
+    #rcorners2 {
+        font-size: 11px;
+    }
+}
 #rcorners2 {
     border-radius: 25px;
     padding: 5px 25px;
     font-size: 1.5vw;
     width: 200px;
 }
-
-#saiba-mais img {
-    margin-left: -10vw;
-    height: 30vw;
+@media screen and (min-width: 768px) {
+    #rcorners2 {
+        font-size: 11px;
+    }
 }
-
+#saiba-mais img {
+    margin-left: -60%;
+    height: 100%;
+}
 .press-kit {
     margin: 0px;
-    padding: 3vw;
+    padding: 3%;
     line-height: 1;
 }
-
 .press-kit span {
     font-size: 3.5vw;
 }
-
-#spacer {
-    padding: 0.5vw;
+@media screen and (min-width: 768px) {
+    .press-kit span {
+        font-size: 27px;
+    }
 }
-
+#spacer {
+    padding: 2%;
+}
 #rcorners3 {
-    padding: 0.2vw 0.9vw;
+    padding: 0.2% 1%;
     font-size: 2vw;
 }
-
+@media screen and (min-width: 768px) {
+    #rcorners3 {
+        font-size: 15px;
+    }
+}
+#div-presskit {
+    max-height: 450px;
+}
 #vacinacao-contra-gripe .box-item-download {
     font-size: 18px
 }
-
 .link-download {
     margin-bottom: 10px;
     display: block;
     cursor: pointer
 }
-
-@media (min-width:768px) {
-    #calendario-full .box-calendario img {
-        width: 40%;
-    }
-    #calendario-full {
-        height: 35vw;
-        position: relative;
-    }
-    #calendario-full .box-calendario span {
-        font-size: 1vw;
-    }
-    #div-tem-que-vacinar {
-        height: 65vw;
-    }
-}
-
 .modal {
     padding-top: 5%
 }
-
 .modal .modal-header {
     border: none
 }
-
 .modal .modal-header h5 {
     text-align: center;
     width: 100%;
@@ -571,44 +545,36 @@ hr {
     color: #4f7345;
     font-family: TTNormsExtraBold
 }
-
 .modal .modal-content {
     border-radius: 0;
     background-color: #ffd300;
     text-align: center
 }
-
 .modal .modal-content h6 {
     color: #4f7345;
     font-family: TTNormsExtraBold
 }
-
 .modal .modal-content ul li a {
     color: #515036
 }
-
 .modal-backdrop.show {
     opacity: .8
 }
-
 #modalVideoChikungunya,
 #modalVideoDengue,
 #modalVideoZika {
     padding-top: 5%
 }
-
 #modalVideoChikungunya .modal-dialog,
 #modalVideoDengue .modal-dialog,
 #modalVideoZika .modal-dialog {
     max-width: 730px
 }
-
 #modalVideoChikungunya .modal-dialog .modal-body,
 #modalVideoDengue .modal-dialog .modal-body,
 #modalVideoZika .modal-dialog .modal-body {
     padding: 8px
 }
-
 #modalVideoChikungunya .modal-dialog iframe,
 #modalVideoDengue .modal-dialog iframe,
 #modalVideoZika .modal-dialog iframe {
