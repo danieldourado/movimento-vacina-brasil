@@ -1,47 +1,57 @@
 @font-face {
     font-family: Gotham-Medium;
-    src: url(../fonts/Gotham-Medium.otf);
+    src: url(../fonts/Gotham-Medium.otf), url(../fonts/Gotham-Medium.ttf) format("truetype");
 }
 
 @font-face {
     font-family: Gotham-Ultra;
-    src: url(../fonts/Gotham-Ultra.otf);
+    src: url(../fonts/Gotham-Ultra.otf), url(../fonts/Gotham-Ultra.ttf) format("truetype");
 }
 
 @font-face {
     font-family: Gotham-Bold;
-    src: url(../fonts/Gotham-Bold.otf);
+    src: url(../fonts/Gotham-Bold.otf), url(../fonts/Gotham-Bold.ttf) format("truetype");
 }
 
-@font-face {
-    font-family: TTNormsRegular;
-    src: url(../fonts/TTNormsRegular.eot);
-    src: url(../fonts/TTNormsRegular.eot) format("embedded-opentype"), url(../fonts/TTNormsRegular.woff2) format("woff2"), url(../fonts/TTNormsRegular.woff) format("woff"), url(../fonts/TTNormsRegular.ttf) format("truetype"), url(../fonts/TTNormsRegular.svg#TTNormsRegular) format("svg")
+.main-header__portal-info__logo__title {
+    font-family: Arial, sans-serif;
+    font-weight: 700
 }
 
-@font-face {
-    font-family: TTNormsBold;
-    src: url(../fonts/TTNormsBold.eot);
-    src: url(../fonts/TTNormsBold.eot) format("embedded-opentype"), url(../fonts/TTNormsBold.woff2) format("woff2"), url(../fonts/TTNormsBold.woff) format("woff"), url(../fonts/TTNormsBold.ttf) format("truetype"), url(../fonts/TTNormsBold.svg#TTNormsBold) format("svg")
+.main-header__portal-info__logo:hover {
+    text-decoration: none
+}
+
+.searchField {
+    font-family: Arial, sans-serif;
+    font-size: 11px
+}
+
+.breadcrumb {
+    display: block;
+    padding: 0
 }
 
 body {
-    font-family: MyriadProRegular;
-    background-image: url(../images/bg.png);
-    background-color: #d7e0df;
-    background-size: 80%;
-    background-repeat: repeat;
-    min-width: 550px;
+    font-family: Gotham-Bold;
+    min-width: 320px;
 }
 
 hr {
     display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: 3%;
-    margin-right: 3%;
-    border-style: inset;
-    border: 3px solid #2ebbad;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 2%;
+    margin-right: 2%;
+    border: 0.3vw solid #2ebbad;
+}
+
+.bg-jpg {
+    background-image: url(../images/bg-verde.jpg);
+    background-color: #d7e0df;
+    background-size: 96%;
+    background-position: center;
+    background-repeat-x: no-repeat;
 }
 
 .main-header__portal-info__logo__title {
@@ -64,9 +74,11 @@ hr {
 }
 
 #header {
-    padding-top: 50px;
-    margin-left: 40px;
-    margin-right: 40px;
+    background-image: url(../images/bg-topo.png);
+    background-size: 96%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 46vw;
 }
 
 #header img {
@@ -90,12 +102,15 @@ hr {
     font-family: TTNormsBold
 }
 
+#conteudo0 {
+    background-image: url(../images/background.jpg);
+    background-color: #d7e0df;
+    background-size: 4%;
+    background-repeat: repeat;
+}
+
 #conteudo {
-    background-image: url(../images/background-header.png);
-    background-position-x: center;
-    background-position-y: 19px;
-    background-size: 94%;
-    background-repeat: no-repeat;
+    max-width: 767px;
 }
 
 #vacinacao {
@@ -108,6 +123,10 @@ hr {
     font-family: Gotham-Ultra;
     font-size: 65px;
     color: #2ebbad;
+}
+
+#div-dia-d {
+    height: 26vw;
 }
 
 #dia-d {
@@ -123,7 +142,8 @@ hr {
     color: #327460;
 }
 
-#vacinacao-contra-gripe {
+#vacinacao-contra-gripe,
+#div-dia-d {
     background: #ffffff;
     padding: 30px
 }
@@ -161,23 +181,9 @@ hr {
     margin-top: 5px
 }
 
-@media (max-width:768px) {
-    #vacinacao-contra-gripe {
-        padding: 30px 0px
-    }
-    #vacinacao-contra-gripe .box-item-download {
-        font-size: 18px
-    }
-    .link-download {
-        margin-bottom: 10px;
-        display: block;
-        cursor: pointer
-    }
-}
-
 #calendario-full {
     height: 330px;
-    position: relative
+    position: relative;
 }
 
 #calendario-full .box-calendario {
@@ -258,7 +264,7 @@ hr {
 .press-kit span {
     font-family: Gotham-Bold;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 3vw;
 }
 
 .tem-que-vacinar span .white {
@@ -290,19 +296,15 @@ hr {
 
 .background-coracao {
     background-image: url(../images/coracao.png);
-    background-size: 230px;
     background-repeat: no-repeat;
     margin-right: 3%;
     background-position-y: center;
     background-position-x: right;
+    background-size: 20vw;
 }
 
 .assista-aos-filmes {
     padding: 20px;
-}
-
-.botoes-filmes {
-    height: 150px;
 }
 
 .botoes-filmes #botoes {
@@ -315,9 +317,9 @@ hr {
     background-image: url(../images/barra.png);
     background-size: 94%;
     background-repeat: no-repeat;
-    margin-left: 3%;
+    margin-left: 2%;
     background-position-y: center;
-    height: 50%;
+    height: 3em;
 }
 
 #rcorners1 {
@@ -374,6 +376,7 @@ hr {
     font-family: Gotham-Bold;
     color: white;
     font-size: 2.6vw;
+    padding: 3vw;
 }
 
 .hashtag {
@@ -399,9 +402,157 @@ hr {
     font-family: Gotham-Bold;
 }
 
+#vacinacao {
+    font-size: 8vw;
+}
+
+#contra-gripe {
+    font-size: 5.8vw;
+}
+
+#vacinacao-contra-gripe h1 {
+    margin-top: -1rem;
+    margin-bottom: 0.5rem;
+}
+
+#vacinacao-contra-gripe {
+    height: 19vw;
+}
+
+.box-calendario .col {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+#calendario-full .box-calendario {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#calendario-full .box-calendario span {
+    font-size: 8px;
+}
+
+#calendario-full {
+    height: 220px;
+    position: relative;
+}
+
+#dia-d {
+    font-size: 19vw;
+}
+
+#dia-d-contra-gripe {
+    font-size: 6vw;
+    margin-top: -5.9vw !important;
+}
+
+#div-tem-que-vacinar {
+    height: 76vw;
+}
+
+.tem-que-vacinar {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.tem-que-vacinar span {
+    font-size: 3vw;
+}
+
+.tem-que-vacinar {
+    line-height: 0.9;
+}
+
+.assista-aos-filmes {
+    padding: 10px;
+}
+
+.yellow span {
+    color: yellow;
+    font-size: 5vw;
+}
+
+.botoes-filmes #botoes {
+    font-size: 4vw;
+}
+
+#saiba-mais {
+    padding-left: 0px;
+    padding-right: 0px;
+    line-height: 1;
+    height: 29vw;
+}
+
+#saiba-mais .green {
+    color: #337964;
+    font-size: 3vw;
+}
+
+#rcorners1 {
+    border-radius: 25px;
+    background: #337964;
+    padding: 5px 25px;
+    font-size: 1.5vw;
+    width: 200px;
+    color: #faeb37;
+}
+
+#rcorners2 {
+    border-radius: 25px;
+    padding: 5px 25px;
+    font-size: 1.5vw;
+    width: 200px;
+}
+
+#saiba-mais img {
+    margin-left: -10vw;
+    height: 30vw;
+}
+
+.press-kit {
+    margin: 0px;
+    padding: 3vw;
+    line-height: 1;
+}
+
+.press-kit span {
+    font-size: 3.5vw;
+}
+
+#spacer {
+    padding: 0.5vw;
+}
+
+#rcorners3 {
+    padding: 0.2vw 0.9vw;
+    font-size: 2vw;
+}
+
+#vacinacao-contra-gripe .box-item-download {
+    font-size: 18px
+}
+
+.link-download {
+    margin-bottom: 10px;
+    display: block;
+    cursor: pointer
+}
+
 @media (min-width:768px) {
     #calendario-full .box-calendario img {
         width: 40%;
+    }
+    #calendario-full {
+        height: 35vw;
+        position: relative;
+    }
+    #calendario-full .box-calendario span {
+        font-size: 1vw;
+    }
+    #div-tem-que-vacinar {
+        height: 65vw;
     }
 }
 
