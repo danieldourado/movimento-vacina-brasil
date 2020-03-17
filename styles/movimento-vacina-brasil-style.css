@@ -13,8 +13,15 @@
     src: url(../fonts/Gotham-Bold.otf), url(../fonts/Gotham-Bold.ttf) format("truetype");
 }
 
-#botao-dia-d {
+#botao-dia-d,
+#div-dia-d,
+#temp-tem-que-vacinar {
     display: none;
+}
+
+#div-tem-que-vacinar {
+    height: 42vw !important;
+    max-height: 322px !important;
 }
 
 .main-header__portal-info__logo__title {
@@ -536,6 +543,9 @@ hr {
     margin-bottom: 10px;
     display: block;
     cursor: pointer
+}
+.botao-videos {
+    color: #337964;
 }
 .modal {
     padding-top: 5%
