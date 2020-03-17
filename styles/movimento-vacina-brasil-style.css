@@ -649,3 +649,6 @@ hr {
         margin-top: -10px
     }
 }
+.social li {
+    display: inline-block;
+}
