@@ -57,6 +57,12 @@ hr {
     border: 0.3vw solid #2ebbad;
 }
 
+@media screen and (min-width: 768px) {
+    hr {
+        border: 2.5px solid #2ebbad;
+    }
+}
+
 .bg-jpg {
     background-image: url(../images/bg-verde.jpg);
     background-size: 96%;
@@ -66,6 +72,8 @@ hr {
 
 .white-stripe {
     background-color: white;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .main-header__portal-info__logo__title {
@@ -91,8 +99,8 @@ hr {
     background-image: url(../images/bg-topo.png);
     background-size: 96%;
     background-position: bottom;
-    height: 46vw;
-    max-height: 380px;
+    height: 49vw;
+    max-height: 440px;
     background-repeat: no-repeat;
 }
 
@@ -122,7 +130,7 @@ hr {
     background-repeat: repeat;
 }
 #conteudo {
-    max-width: 768px;
+    max-width: 868px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -233,7 +241,6 @@ hr {
     width: 50%;
 }
 #saiba-mais {
-    background-color: #faeb37;
     height: 170px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -297,14 +304,6 @@ hr {
 .tem-que-vacinar img {
     width: 80%;
 }
-.background-coracao {
-    background-image: url(../images/coracao.png);
-    background-repeat: no-repeat;
-    margin-right: 3%;
-    background-position-y: center;
-    background-position-x: right;
-    background-size: 20%;
-}
 .assista-aos-filmes {
     padding: 20px;
 }
@@ -316,7 +315,7 @@ hr {
     display: -webkit-box;
     display: -ms-flexbox;
     background-image: url(../images/barra.png);
-    background-size: 94%;
+    background-size: 44%;
     background-repeat: no-repeat;
     margin-left: 2%;
     background-position-y: center;
@@ -370,7 +369,7 @@ hr {
     font-family: Gotham-Bold;
     color: white;
     font-size: 2.6vw;
-    padding: 3%;
+    padding: 6%;
 }
 @media screen and (min-width: 768px) {
     .redes-sociais {
@@ -408,19 +407,20 @@ hr {
     padding-left: 5px;
 }
 #calendario-full .box-calendario {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 6%;
+    margin-right: 6%;
 }
 #calendario-full .box-calendario span {
-    font-size: 8px;
+    font-size: 2.3vw;
 }
 @media screen and (min-width: 768px) {
-    #vacincalendario-full .box-calendario spanacao {
-        font-size: 62px;
+    #calendario-full .box-calendario span {
+        font-size: 17px;
     }
 }
 #calendario-full {
-    height: 240px;
+    height: 60vw;
+    max-height: 422px;
     position: relative;
 }
 #div-tem-que-vacinar {
@@ -505,12 +505,12 @@ hr {
     }
 }
 #saiba-mais img {
-    margin-left: -60%;
+    margin-left: -160%;
     height: 100%;
 }
 .press-kit {
     margin: 0px;
-    padding: 3%;
+    padding: 6%;
     line-height: 1;
 }
 .press-kit span {
@@ -595,4 +595,57 @@ hr {
 #modalVideoZika .modal-dialog iframe {
     width: 100%;
     height: 300px
+}
+#video {
+    background-image: url(../images/coracao.png), url(../images/bg-verde.jpg);
+    background-repeat: no-repeat, repeat-y;
+    background-position-y: center;
+    background-position-x: 96.7%, center;
+    background-size: 20%, 96%;
+    padding-bottom: 50px
+}
+#video iframe {
+    width: 80%;
+    height: 480px;
+    margin: 25px
+}
+#video h1 {
+    color: #ffd300;
+    font-size: 150px;
+    font-family: TTNormsBold
+}
+#video h1 img {
+    max-width: 130px;
+    margin-top: -30px;
+    margin-right: 10px;
+    margin-left: 10px
+}
+#video h4 {
+    color: #ffd300;
+    font-size: 21px;
+    font-family: TTNormsExtraBold
+}
+#video h4,
+#video p {
+    text-transform: uppercase
+}
+#video p {
+    color: #fff;
+    font-size: 20px;
+    font-family: TTNormsRegular
+}
+@media (max-width:768px) {
+    #video iframe {
+        height: 200px
+    }
+    
+    #video h1 {
+        font-size: 70px;
+        margin-bottom: 20px
+    }
+    
+    #video h1 img {
+        max-width: 60px;
+        margin-top: -10px
+    }
 }
