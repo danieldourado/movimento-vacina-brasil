@@ -217,10 +217,9 @@ hr {
 #calendario-full .box-calendario {
     bottom: 15px;
     color: #fff;
-    text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: block;
     margin-left: 40px;
     margin-right: 40px;
     left: 0;
@@ -238,7 +237,7 @@ hr {
 #calendario-full .box-calendario img {
     margin-bottom: 10px;
     margin-top: 5px;
-    width: 50%;
+    width: 100%;
 }
 #saiba-mais {
     height: 170px;
@@ -409,18 +408,19 @@ hr {
 #calendario-full .box-calendario {
     margin-left: 6%;
     margin-right: 6%;
+    padding-top: 2%;
 }
 #calendario-full .box-calendario span {
     font-size: 2.3vw;
 }
 @media screen and (min-width: 768px) {
     #calendario-full .box-calendario span {
-        font-size: 17px;
+        font-size: 16px;
     }
 }
 #calendario-full {
-    height: 60vw;
-    max-height: 422px;
+    height: 70vw;
+    max-height: 622px;
     position: relative;
 }
 #div-tem-que-vacinar {
@@ -651,4 +651,20 @@ hr {
 }
 .social li {
     display: inline-block;
+}
+.modal-body .content a {
+    font-family: Gotham-Medium;
+}
+.item {
+    display: flex;
+}
+.texto-calendario {
+    margin-bottom: auto;
+    margin-top: auto;
+}
+#modalCalendario:hover {
+    color: #ffd300;
+}
+#modalCalendario {
+    color: white;
 }

@@ -23,21 +23,21 @@
     <!--[if IE]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
     <div id="barra-identidade">
         <div id="barra-brasil"><a href="https://brasil.gov.br" style="background:#7f7f7f;height:20px;padding:4px 0 4px 10px;display:block;font-family:sans,sans-serif;text-decoration:none;color:#fff">Portal
-            do Governo Brasileiro</a></div>
+                do Governo Brasileiro</a></div>
     </div>
     <div class="main-header">
         <div class="main-header__accessibility">
             <div class="main-header__accessibility__hot-keys">
                 <ul class="main-header__accessibility__hot-keys__list">
                     <li class="main-header__accessibility__hot-keys__list__item"><a href="#conteudo" data-accesskey="1" class="js-hot-keys main-header__accessibility__hot-keys__list__item__link">Ir para o
-                        conteúdo<span
-                            class="main-header__accessibility__hot-keys__list__item__link__count">1</span></a></li>
+                            conteúdo<span
+                                class="main-header__accessibility__hot-keys__list__item__link__count">1</span></a></li>
                     <li class="main-header__accessibility__hot-keys__list__item"><a href="#services-bar" data-accesskey="2" class="js-hot-keys main-header__accessibility__hot-keys__list__item__link">Ir para o
-                        menu<span class="main-header__accessibility__hot-keys__list__item__link__count">2</span></a>
+                            menu<span class="main-header__accessibility__hot-keys__list__item__link__count">2</span></a>
                     </li>
                     <li class="main-header__accessibility__hot-keys__list__item"><a href="#main-footer" data-accesskey="3" class="js-hot-keys main-header__accessibility__hot-keys__list__item__link">Ir para o
-                        rodapé<span
-                            class="main-header__accessibility__hot-keys__list__item__link__count">3</span></a></li>
+                            rodapé<span
+                                class="main-header__accessibility__hot-keys__list__item__link__count">3</span></a></li>
                 </ul>
             </div>
             <div class="main-header__accessibility__site-actions">
@@ -53,10 +53,10 @@
                     <fieldset class="LSBox"><input name="SearchableText" type="text" size="18" title="Buscar no Portal Brasil" placeholder="Buscar no Portal Brasil" class="searchField" id="nolivesearchGadget"> <button class="searchButton" type="submit"></button></fieldset>
                 </form>
             </div><a href="#" class="main-header__portal-info__logo"><span
-                class="main-header__portal-info__logo__denomination">Campanha Nacional</span>
-            <h1 class="main-header__portal-info__logo__title">Movimento Vacina Brasil</h1><span
-                class="main-header__portal-info__logo__subordination"></span>
-        </a>
+                    class="main-header__portal-info__logo__denomination">Campanha Nacional</span>
+                <h1 class="main-header__portal-info__logo__title">Movimento Vacina Brasil</h1><span
+                    class="main-header__portal-info__logo__subordination"></span>
+            </a>
             <div class="main-header__portal-info__actions">
                 <div class="main-header__portal-info__actions__socialize">
                     <ul class="main-header__portal-info__actions__socialize__list">
@@ -105,25 +105,35 @@
             </div>
             <div id="calendario-full" class="bg-jpg">
                 <div class="box-calendario">
-                    <div class="col">
-                        <div class="item">
+                    <div class="item">
+                        <div class="col-3">
                             <img src="images/calendario_23.png" />
-                            <span>• Idosos com 60 anos ou mais</span>
-                            <span>• trabalhadores da saúde</span>
+                        </div>
+                        <div class="col texto-calendario">
+                            <a id="modalCalendario" href="#modalCalendario" class="link-download" data-toggle="modal" data-target="#modalIdososCom60AnosOuMais">
+                                <span>• Idosos com 60 anos ou mais</span>
+                            </a>
+                            <a id="modalCalendario" href="#modalCalendario" class="link-download" data-toggle="modal" data-target="#modalTrabalhadoresDaSaude">
+                                <span>• trabalhadores da saúde</span>
+                            </a>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="item">
+                    <div class="item">
+                        <div class="col-3">
                             <img src="images/calendario_16.png" />
+                        </div>
+                        <div class="col texto-calendario">
                             <span>• Doentes crônicos</span>
                             <span>• Professores</span>
                             <span>• Profissionais das forças de segurança e salvamento</span>
-
                         </div>
+
                     </div>
-                    <div class="col">
-                        <div class="item">
+                    <div class="item">
+                        <div class="col-3">
                             <img src="images/calendario_9.png" />
+                        </div>
+                        <div class="col texto-calendario">
                             <span>• crianças de 6 meses a menores de 6 anos</span>
                             <span>• pessoas com 55 anos ou mais</span>
                             <span>• grávidas</span>
@@ -176,7 +186,8 @@
                                 <span style="margin-top: 20px;">Filme Geral</span>
                             </div>
                             <div class="col-6 my-auto" id="botao-dia-d">
-                                <button class="botao-videos" data-toggle="modal" data-target="#modalVideoDengue"><span style="margin-top: 20px;">Filme Dia D</span></button>
+                                <button class="botao-videos" data-toggle="modal" data-target="#modalVideoDengue"><span
+                                        style="margin-top: 20px;">Filme Dia D</span></button>
                             </div>
                         </div>
                     </div>
@@ -194,7 +205,9 @@
                             <div style="display: inline-block; text-align: left;">
                                 <span>Press kit.</span><span class="yellow"><br>vacinação<br>contra a gripe.</span>
                                 <div id="spacer"></div>
-                                <span id="rcorners2">Download</span>
+                                <a href="#modalPressKit" class="link-download" data-toggle="modal" data-target="#modalPressKit">
+                                    <span id="rcorners2">Download</span>
+                                </a>
                             </div>
                         </div>
                         <div class="vl"></div>
@@ -246,6 +259,87 @@
             </div>
         </div>
     </div>
+
+
+
+    <div class="modal fade" id="modalPressKit" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Presskit</h5><button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="content">
+                        <ul>
+                            <li><a href="./documents/Filmes e Spots.zip" target="_blank">Filmes e Spots</a><br>
+                                <a href="./documents/Redes (capa e avatar).zip" target="_blank">Redes (capa e avatar)</a><br>
+                                <a href="./documents/Template PPT.zip" target="_blank">Template PPT</a><br>
+                                <a href="./documents/MS_GRIPE_2020_Ass_Email.jpg" download target="_blank"> Com interna (assinatura de e-mail) </a><br>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalIdososCom60AnosOuMais" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">IDOSOS COM 60 ANOS OU MAIS</h5><button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="content">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalTrabalhadoresDaSaude" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">TRABALHADORES DA SAÚDE</h5><button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="content">
+                        <ul>
+                            <li>Médicos;</li>
+                            <li>Enfermeiros;</li>
+                            <li>Técnicos de Enfermagem;</li>
+                            <li>Parteiras;</li>
+                            <li>Odontólogos;</li>
+                            <li>Atendentes de odontologia;</li>
+                            <li>Farmacêuticos;</li>
+                            <li>Atendentes de Farmácia;</li>
+                            <li>Psicólogos;</li>
+                            <li>Atendentes de clínicas de psicologia;</li>
+                            <li>Técnicos de Raio X;</li>
+                            <li>Pessoal da limpeza, recepcionistas e atendentes dos serviços de saúde;</li>
+                            <li>Profissionais de educação física;</li>
+                            <li>Médicos Veterinários;</li>
+                            <li>Investigadores da Vigilância Epidemiológica;</li>
+                            <li>Agentes Comunitários da Saúde;</li>
+                            <li>Agentes de endemias;</li>
+                            <li>Nutricionistas;</li>
+                            <li>Auxiliares de nutrição;</li>
+                            <li>Assistentes sociais;</li>
+                            <li>Biólogos;</li>
+                            <li>Fisioterapeutas;</li>
+                            <li>Fonoaudiólogos;</li>
+                            <li>Terapeutas Ocupacionais;</li>
+                            <li>Estagiários dos serviços de saúde.</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="main-footer" class="main-footer">
         <div class="main-footer__featured-page">
             <ul class="main-footer__featured-page__partners-list --three">
