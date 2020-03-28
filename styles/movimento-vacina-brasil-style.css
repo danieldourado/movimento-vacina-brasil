@@ -668,3 +668,45 @@ hr {
 #modalCalendario {
     color: white;
 }
+
+.link-calendario{
+    color: #fff;
+    
+}
+
+.link-calendario:hover{
+    color: #fff;
+}
+.title-calendario{
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#calendario-full {
+    height: 95vw;
+    max-height: 780px;
+}
+
+#calendario-full h2{
+ text-align: center;
+ text-transform: uppercase;
+}
+
+#calendario-full b{
+    color: yellow;
+}
+
+@media (max-width: 666px){
+    #calendario-full {
+        height: 120vw;
+        max-height: 980px;
+    }   
+}
+
+@media (max-width: 376px){
+    #calendario-full {
+        height: 145vw;
+        max-height: 980px;
+    }   
+}
