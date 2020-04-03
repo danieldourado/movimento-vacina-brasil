@@ -206,8 +206,10 @@
             <img src="images/calendario_16.png" />
         </div>
         <div class="col texto-calendario">
-            <span>• Doentes crônicos</span>
-            <span>• Professores</span>
+            <a id="modalCalendario" href="#modalDoentesCronicos" class="link-download" data-toggle="modal" data-target="#modalDoentesCronicos">
+                <span>• Doentes crônicos</span>
+            </a>
+            <span>• Caminhoneiros, motoristas de transporte coletivo e portuários</span>
             <a id="modalCalendario" href="#modalCalendario" class="link-download" data-toggle="modal" data-target="#modalForcaDeSegurancaESalvamento">
                 <span>• Profissionais das forças de segurança e salvamento</span>
             </a>
@@ -218,11 +220,13 @@
             <img src="images/calendario_9.png" />
         </div>
         <div class="col texto-calendario">
+            <span>• Professores</span>
             <span>• crianças de 6 meses a menores de 6 anos</span>
             <span>• pessoas com 55 anos ou mais</span>
             <span>• grávidas</span>
             <span>• mães no pós-parto </span>
             <span>• população indígena</span>
+            <span>• Pessoas com 55 anos ou mais</span>
             <a id="modalCalendario" href="#modalCalendario" class="link-download" data-toggle="modal" data-target="#modalPessoasComDeficiência">
                 <span>• pessoas com deficiência</span>
             </a>
@@ -545,6 +549,126 @@
               <span>d) deficiência intelectual e mental: limitações relacionadas à comunicação interpessoal, cuidado pessoal, habilidades sociais, utilização dos recursos da comunidade, saúde e segurança, déficit de aprendizagem, para o lazer e trabalho, que resultem em dificuldades para o desempenho da funcionalidade podendo obstruir sua participação plena e efetiva na sociedade;</span>
               <p></p>
               <span>e) deficiência múltipla - associação de duas ou mais deficiências que resultem em dificuldades para o desempenho da funcionalidade podendo obstruir sua participação plena e efetiva na sociedade.</span>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="modal fade"
+    id="modalDoentesCronicos"
+    tabindex="-1"
+    role="dialog"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">
+            Doentes Crônicos
+          </h5>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Fechar"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="content">
+              <span><b>Pessoas portadoras de doenças crônicas não transmissíveis e outras condições clínicas especiais independe da idade.</b></span>
+              <p></p>
+              <div><b>Categoria de risco clínico: Doença respiratória crônica</b></div>
+              <div><b>Indicações:</b></div>
+              <ul>
+                <li>Asma em uso de corticóide inalatório ou sistêmico (Moderada ou Grave);</li>
+                <li>Doença Pulmonar Obstrutiva Crônica (DPOC);</li>
+                <li>Bronquiectasia;</li>
+                <li>Fibrose Cística;</li>
+                <li>Doenças Intersticiais do pulmão;</li>
+                <li>Displasia broncopulmonar;</li>
+                <li>Hipertensão Arterial Pulmonar;</li>
+                <li>Crianças com doença pulmonar crônica da prematuridade.</li>
+              </ul>
+              <p></p>
+              <div><b>Categoria de risco clínico: Doença cardíaca crônica</b></div>
+              <div><b>Indicações:</b></div>
+              <ul>
+                <li>Doença cardíaca congênita;</li>
+                <li>Hipertensão arterial sistêmica com comorbidade;</li>
+                <li>Doença cardíaca isquêmica;</li>
+                <li>Insuficiência cardíaca.</li>
+              </ul>
+              <p></p>
+              <div><b>Categoria de risco clínico: Doença renal crônica</b></div>
+              <div><b>Indicações:</b></div>
+              <ul>
+                <li>Doença renal nos estágios 3,4 e 5;</li>
+                <li>Síndrome nefrótica;</li>
+                <li>Paciente em diálise.</li>
+              </ul>
+              <p></p>
+              <div><b>Categoria de risco clínico: Doença hepática crônica</b></div>
+              <div><b>Indicações:</b></div>
+              <ul>
+                <li>Atresia biliar;</li>
+                <li>Hepatites crônicas;</li>
+                <li>Cirrose.</li>
+              </ul>
+              <p></p>
+              <div><b>Categoria de risco clínico: Doença neurológica crônica  </b></div>
+              <div><b>Indicações:</b></div>
+              <ul>
+                <li>Condições em que a função respiratória pode estar comprometida pela doença neurológica;</li>
+                <li>Considerar as necessidades clínicas individuais dos pacientes incluindo: Acidente Vascular Cerebral, Indivíduos com paralisia cerebral, esclerose múltipla, e condições similares;</li>
+                <li>Doenças hereditárias e degenerativas do sistema nervoso ou muscular;</li>
+                <li>Deficiência neurológica grave.</li>
+              </ul>
+              <p></p>
+              <div><b>Categoria de risco clínico: Diabetes</b></div>
+              <div><b>Indicações:</b></div>
+              <ul>
+                <li>Diabetes Mellitus tipo I e tipo II em uso de medicamentos.</li>
+              </ul>
+              <p></p>
+              <div><b>Categoria de risco clínico: Imunossupressão</b></div>
+              <div><b>Indicações:</b></div>
+              <ul>
+                <li>Imunodeficiência congênita ou adquirida</li>
+                <li>Imunossupressão por doenças ou medicamentos</li>
+              </ul>
+              <p></p>
+              <div><b>Categoria de risco clínico: Obesos</b></div>
+              <div><b>Indicações:</b></div>
+              <ul>
+                <li>Obesidade grau III.</li>
+              </ul>
+              <p></p>
+              <div><b>Categoria de risco clínico: Transplantados </b></div>
+              <div><b>Indicações:</b></div>
+              <ul>
+                <li>Órgãos sólidos;</li>
+                <li>Medula óssea.</li>
+              </ul>
+              <p></p>
+              <div><b>Categoria de risco clínico: Portadores de trissomias </b></div>
+              <div><b>Indicações:</b></div>
+              <ul>
+                <li>Síndrome de Down, Síndrome de Klinefelter, Síndrome de Warkany, dentre outras trissomias.</li>
+              </ul>
+              <p></p>
+              <div>Fonte: Ministério da Saúde</div>
+              <p></p>
+              <div>A vacinação deste grupo deve ser realizada em todos os postos. No entanto, <b>mantém-se a necessidade de prescrição médica especificando o motivo da indicação da vacina, que deverá ser apresentada no ato da vacinação.</b></div>
+              <div>Pacientes já cadastrados em programas de controle das doenças crônicas do SUS devem se
+                dirigir aos postos que estão cadastrados para receberem a vacina. Caso no local onde são atendidos regularmente não tenha um posto de vacinação, devem buscar a prescrição médica na próxima consulta que estiver agendada, visando garantir esse documento com antecedência, para evitar filas no período da vacinação.</b></div>
+                <div>Pacientes que são atendidos na rede privada ou conveniada, também devem buscar a
+                  prescrição médica com antecedência, junto ao seu médico assistente, devendo apresentá-la nos postos de vacinação durante a realização da campanha.</b></div>
+  
+              
             </ul>
           </div>
         </div>
