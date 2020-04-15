@@ -13,8 +13,16 @@
     src: url(../fonts/Gotham-Bold.otf), url(../fonts/Gotham-Bold.ttf) format("truetype");
 }
 
+.dia-d-bg {
+    background-image: url(../images/dia-d.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: repeat-y;
+    max-height: 339px;
+    height: 38vw;
+}
+
 #botao-dia-d,
-#div-dia-d,
 #botao-dia-d,
 #temp-tem-que-vacinar {
     display: none;
@@ -602,7 +610,7 @@ hr {
     background-position-y: center;
     background-position-x: 96.7%, center;
     background-size: 20%, 96%;
-    padding-bottom: 50px
+    margin-bottom: -30px;
 }
 #video iframe {
     width: 80%;
